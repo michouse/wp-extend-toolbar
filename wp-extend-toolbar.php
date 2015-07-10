@@ -1,7 +1,7 @@
 <?php
 /*
  Plugin Name: WP Extend Toolbar
- Plugin URI: http://piece-web.jp/wp-extend-toolbar/
+ Plugin URI: https://github.com/michouse/wp-extend-toolbar
  Description: Adds a page information to the admin bar.
  Author: Michinari Odajima
  Version: 0.1.0

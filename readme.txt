@@ -1,6 +1,5 @@
 === WP Extend Toolbar ===
 Contributors: michouse
-Donate link: http://www.amazon.co.jp/registry/wishlist/3DB9WERTPRAZ0
 Tags: plugin, admin bar, tool bar, custom admin bar, custom tool bar
 Requires at least: 4.0
 Tested up to: 4.2.2
