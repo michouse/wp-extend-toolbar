@@ -14,12 +14,12 @@ WP Extend Toolbar is display the following page information to the admin bar.
 
 WP Extend Toolbar is display the following page information to the admin bar.
 
-* content of h1 tag.
+* content of Title tag.
 * content of Description tag.
 
 WP Extend Toolbar は、ツールバーを拡張し、以下のページ情報を表示します。
 
-* H1 タグの内容
+* Title タグの内容
 * Description タグの内容
 
 
