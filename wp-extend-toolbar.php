@@ -14,16 +14,16 @@ class WP_Extend_Toolbar {
 
 	function WP_Extend_Toolbar() {
 		
+		add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );
 		add_action( 'admin_bar_init', array( $this, 'admin_bar_init' ) );
 		
 	}
 	
 	function admin_bar_init() {
 
-		if ( ! is_admin() && is_admin_bar_showing() && is_user_logged_in() ) {
-
-			add_action( 'admin_bar_menu', array( $this, 'admin_bar_menu' ), 100 );
+		if ( ! is_admin() && is_admin_bar_showing() && is_user_logged_in() && current_user_can('edit_user') ) {
 			
+			add_action( 'admin_bar_menu', array( $this, 'admin_bar_menu' ), 100 );
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ), 100 );
 		
 		}
@@ -71,7 +71,6 @@ class WP_Extend_Toolbar {
 	function enqueue() {
 		
 		wp_enqueue_style( 'wp-extend-toolbar', plugins_url( "css/wp-extend-toolbar.css", __FILE__ ), array(), '0.1.0' );
-
 		wp_enqueue_script( 'wp-extend-toolbar', plugins_url( "js/wp-extend-toolbar.js", __FILE__ ), array( 'jquery' ), '0.1.0', true );
 		
 	}
