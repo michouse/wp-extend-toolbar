@@ -1,4 +1,5 @@
 jQuery(document).ready(function(jQuery){
+	
 	var title = jQuery("title").text();
 	var description = jQuery("meta[name=description]").attr("content");
 	
@@ -8,8 +9,6 @@ jQuery(document).ready(function(jQuery){
 	var total_height = 32;
 	total_height += jQuery('#wp-admin-bar-extend-toolbar-title').height();
 	total_height += jQuery('#wp-admin-bar-extend-toolbar-description').height();
-	
-	console.log( total_height );
 	
 	jQuery('html').css({
 		'margin-top': total_height + 'px'
