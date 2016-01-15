@@ -4,7 +4,7 @@
  Plugin URI: https://github.com/michouse/wp-extend-toolbar
  Description: Adds a page information to the admin bar.
  Author: Michinari Odajima
- Version: 1.1.3
+ Version: 1.1.4
  Author URI: http://piece-web.jp/
  Domain Path: /language
  Text Domain: wp-extend-toolbar
@@ -36,7 +36,7 @@ class WP_Extend_Toolbar {
 		$wp_admin_bar->add_group( array(
 			'id'     => 'extend-toolbar',
 			'meta'   => array(
-				'class' => 'ab-extend-toolbar',
+			'class' => 'ab-extend-toolbar',
 			),
 		) );
 		
@@ -70,8 +70,8 @@ class WP_Extend_Toolbar {
 	
 	function enqueue() {
 		
-		wp_enqueue_style( 'wp-extend-toolbar', plugins_url( "css/wp-extend-toolbar.css", __FILE__ ), array(), '1.1.3' );
-		wp_enqueue_script( 'wp-extend-toolbar', plugins_url( "js/wp-extend-toolbar.js", __FILE__ ), array( 'jquery' ), '1.1.3', true );
+		wp_enqueue_style( 'wp-extend-toolbar', plugins_url( "css/wp-extend-toolbar.css", __FILE__ ), array(), '1.1.4' );
+		wp_enqueue_script( 'wp-extend-toolbar', plugins_url( "js/wp-extend-toolbar.js", __FILE__ ), array( 'jquery' ), '1.1.4', true );
 		
 	}
 }
