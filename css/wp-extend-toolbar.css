@@ -1,5 +1,9 @@
 @charset 'utf-8';
 
+html {
+	position: relative;
+}
+
 #wp-admin-bar-extend-toolbar {
 	z-index: 9998 !important;
 }
